@@ -1,0 +1,154 @@
+html, body {
+  min-height: 100%;
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom right, #ff4dd2, #33ff77);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wapper {
+  background-image: linear-gradient(rgb(255, 132, 110)50%, white 50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 600px;
+}
+
+.wapper > h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.add-wapper {
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 100px;
+  width: 500px;
+  height: 75px;
+  padding-left: 10px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.add-wapper > h3 {
+  font-size: 16px;
+  padding-top: 5px;
+  margin-top: 1px;
+  margin-bottom: 8px;
+}
+
+.add-items > input {
+  font-size: 16px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: -2px;
+}
+
+.add-items > button {
+  font-size: 16px;
+  width: 70px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: -2px;
+  background-color: #00e600;
+  color: black;
+}
+
+.add-items > button:hover {
+  font-size: 18px;
+  width: 70px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 3.8px;
+  margin-top: -2px;
+  background-color: #66ffff;
+  box-shadow: 0 0 10px #66ffff, 0 0 20px #66ffff;
+  color: black;
+}
+
+.list-wapper {
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 100px;
+  width: 510px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.items-num {
+  padding: 5px;
+}
+
+.item {
+  display: inline;
+  margin-right: 1rem;
+  font-size: 16px;
+}
+
+.item > p {
+  display: inline;
+  margin-left: 10px;
+}
+
+.item:hover + .icon {
+  opacity: 1;
+  transition: opacity 0.1s linear;
+}
+
+.icon {
+  opacity: 0;
+  color: red;
+  font-size: 18px;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  transition-delay: 3s;
+}
+
+.item-position {
+  border: 1px solid black;
+  width: 20px;
+  font-size: 12px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.delete-all > button {
+  font-size: 16px;
+  text-align: center;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 310px;
+  background-color: #ffff66;
+  color: black;
+}
+
+.delete-all > button:hover {
+  font-size: 17px;
+  background-color: red;
+  color: white;
+  box-shadow: 0 0 10px red, 0 0 20px red;
+}
+
+/* Css for text content double to edit  */
+.item > p > input{
+  outline: none;
+  border: none;
+  width: 400px;
+  height: 16px;
+  font-size: 16px;
+  font-family: monospace;
+}
