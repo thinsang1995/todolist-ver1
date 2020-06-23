@@ -58,7 +58,7 @@ function checkedItem(checked) {
 
 // Delete item
 function removeItem(removeElement) {
-  removeElement.parentNode.remove()
+  removeElement.parentNode.parentNode.remove()
 }
 
 // Delete all item
