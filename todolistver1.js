@@ -44,7 +44,7 @@ function addItem() {
   if(inputValue) {
     document.querySelector('#input-item').value = ''
     listWapper.appendChild(itemDivNum1)
-    itemDivNum1.setAttribute('id', 'item-'+(count++))
+    itemDivNum1.setAttribute('class', 'items-num item-'+(count++))
     itemInput.value = count-1
   } else {
     return alert('Please fill out!!!')
@@ -84,10 +84,10 @@ function editItem(item) {
 
 // Change item position
 function changeIdNumber(inputNumber) {
-  inputNumber.parentNode.parentNode.id = 'item-' + inputNumber.value
+  inputNumber.parentNode.parentNode.className = 'items-num item-' + inputNumber.value
   const allItem = document.querySelector('.list-wapper')
   Array.from(allItem.children).sort(function(a, b) {
-    return a.id.match(/\d/) - b.id.match(/\d/)
+    return a.className.match(/\d+/) - b.className.match(/\d+/)
   }).forEach(function(elem) {
     allItem.appendChild(elem)
   });
