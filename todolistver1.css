@@ -85,22 +85,19 @@ body {
   width: 510px;
   height: auto;
   border-radius: 3px;
+  font-size: 16px;
 }
 
 .items-num {
   padding: 5px;
   border: 1px solid black;
   margin-top: -1px;
-  user-select: none;
-  border: 1px solid black;
-  font-size: 16px;
   width: 498px;
 }
 
 .item {
   display: inline;
   margin-right: 1rem;
-  font-size: 16px;
 }
 
 .item > p {
@@ -158,7 +155,6 @@ body {
   border: none;
   width: 350px;
   height: 16px;
-  font-size: 16px;
   font-family: monospace;
 }
 
@@ -168,7 +164,7 @@ body {
 
 .check::before {
   content: "\2713";
-  font-size: 14px;
+  font-size: 14px !important;
   color: #00e600;
   margin-left: 5px;
 }
