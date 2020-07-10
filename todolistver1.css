@@ -91,6 +91,10 @@ body {
   padding: 5px;
   border: 1px solid black;
   margin-top: -1px;
+  user-select: none;
+  border: 1px solid black;
+  font-size: 16px;
+  width: 498px;
 }
 
 .item {
@@ -104,18 +108,18 @@ body {
   margin-left: 10px;
 }
 
-.item:hover + .icon {
+.items-num:hover > .icon {
   opacity: 1;
   transition: opacity 0.1s linear;
+  display: inline;
 }
 
 .icon {
-  display: inline;
+  display: none;
   opacity: 0;
-  font-size: 18px;
+  font-size: 16px;
   padding: 0px 5px 0px 5px;
   cursor: pointer;
-  transition-delay: 3s;
   padding-left: 5px;
 }
 
@@ -126,14 +130,6 @@ body {
 
 .fa-trash-o {
   color: red;
-}
-
-.item-position {
-  border: 1px solid black;
-  width: 20px;
-  font-size: 12px;
-  margin-left: 5px;
-  text-align: center;
 }
 
 .delete-all > button {
@@ -156,7 +152,7 @@ body {
   box-shadow: 0 0 10px red, 0 0 20px red;
 }
 
-/* Css for text content double to edit  */
+/* Css for text content when double click to edit  */
 .item > p > input{
   outline: none;
   border: none;
@@ -164,4 +160,23 @@ body {
   height: 16px;
   font-size: 16px;
   font-family: monospace;
+}
+
+.check > p {
+  text-decoration: line-through;
+}
+
+.check::before {
+  content: "\2713";
+  font-size: 14px;
+  color: #00e600;
+  margin-left: 5px;
+}
+
+.placeholder {
+  background-color: #edf2f7;
+  border: 2px dashed #cbd5e0;
+  text-align: center;
+  width: 510px;
+  height: auto;
 }
