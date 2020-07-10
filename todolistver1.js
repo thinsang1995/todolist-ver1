@@ -13,7 +13,6 @@ function addItem() {
   const itemP = document.createElement('p')
   itemDivNum2.appendChild(itemP)
   itemP.setAttribute('ondblclick', 'editItem(this)')
-  itemP.textContent = inputValue
 
   const itemDivNum3 = document.createElement('div')
   itemDivNum1.appendChild(itemDivNum3)
